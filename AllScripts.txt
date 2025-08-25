@@ -1,4 +1,2 @@
 Test:::print("Hello world")
-what:::--lol
-YES:::--THIS WORKS
 Infinite Yield:::loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
