@@ -1,1 +1,10 @@
-
+Infinite Yield:::loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+Wisl FE Hub:::loadstring(game:HttpGet("https://raw.githubusercontent.com/wisl884/wisl-i-Universal-Project1/refs/heads/main/Wisl'i%20Universal%20Project.lua"))()
+Dex:::loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/Dex/refs/heads/master/main.lua"))()
+Strawberry CMD:::loadstring(game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/level3.lua"))()
+Airhub:::loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub-V2/main/src/Main.lua"))()
+sw4mp m0nster:::loadstring(game:HttpGet("https://pastefy.app/2tC7nRAK/raw"))()
+Best Aimbot and ESP:::getgenv().bypass_adonis = true loadstring(game:HttpGet("https://raw.githubusercontent.com/FakeAngles/PasteWare/refs/heads/main/PasteWare.lua"))()
+MM2 Gui:::loadstring(game:HttpGet("https://raw.githubusercontent.com/Kokotzkanala/mm2script/refs/heads/main/Protected_8785936320615200.lua", true))()
+(R15 Ragdoll):::loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-ragdoll-script/refs/heads/main/script.lua', true))()
+FE Dog Script:::loadstring(game:HttpGet("https://pastebin.com/raw/WyqDmp0t"))()
