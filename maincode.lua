@@ -1,334 +1,323 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 29 | Scripts: 7 | Modules: 0 | Tags: 0
-local G2L = {};
+local CDWASHERE = {};
 
 -- StarterGui.Syntax
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
-G2L["1"]["DisplayOrder"] = 1999999999;
-G2L["1"]["Name"] = [[Syntax]];
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-G2L["1"]["ResetOnSpawn"] = false;
+CDWASHERE["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+CDWASHERE["1"]["DisplayOrder"] = 1999999999;
+CDWASHERE["1"]["Name"] = [[Syntax]];
+CDWASHERE["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+CDWASHERE["1"]["ResetOnSpawn"] = false;
 
 
 -- StarterGui.Syntax.MainFrame
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["2"]["Size"] = UDim2.new(0, 500, 0, 300);
-G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[MainFrame]];
+CDWASHERE["2"] = Instance.new("Frame", CDWASHERE["1"]);
+CDWASHERE["2"]["BorderSizePixel"] = 0;
+CDWASHERE["2"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+CDWASHERE["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+CDWASHERE["2"]["Size"] = UDim2.new(0, 500, 0, 300);
+CDWASHERE["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+CDWASHERE["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["2"]["Name"] = [[MainFrame]];
 
 
 -- StarterGui.Syntax.MainFrame.Shadows
-G2L["3"] = Instance.new("Folder", G2L["2"]);
-G2L["3"]["Name"] = [[Shadows]];
+CDWASHERE["3"] = Instance.new("Folder", CDWASHERE["2"]);
+CDWASHERE["3"]["Name"] = [[Shadows]];
 
 
 -- StarterGui.Syntax.MainFrame.Shadows.Outlines
-G2L["4"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["4"]["ZIndex"] = -1;
-G2L["4"]["BorderSizePixel"] = 0;
-G2L["4"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
-G2L["4"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["4"] = Instance.new("ImageLabel", CDWASHERE["3"]);
+CDWASHERE["4"]["ZIndex"] = -1;
+CDWASHERE["4"]["BorderSizePixel"] = 0;
+CDWASHERE["4"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
+CDWASHERE["4"]["ScaleType"] = Enum.ScaleType.Slice;
+CDWASHERE["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["4"]["Image"] = [[rbxassetid://117289445817087]];
-G2L["4"]["TileSize"] = UDim2.new(0, 20, 0, 20);
-G2L["4"]["Size"] = UDim2.new(1, 10, 1, 10);
-G2L["4"]["BackgroundTransparency"] = 1;
-G2L["4"]["Name"] = [[Outlines]];
-G2L["4"]["Position"] = UDim2.new(0, -5, 0, -5);
+CDWASHERE["4"]["Image"] = [[rbxassetid://117289445817087]];
+CDWASHERE["4"]["TileSize"] = UDim2.new(0, 20, 0, 20);
+CDWASHERE["4"]["Size"] = UDim2.new(1, 10, 1, 10);
+CDWASHERE["4"]["BackgroundTransparency"] = 1;
+CDWASHERE["4"]["Name"] = [[Outlines]];
+CDWASHERE["4"]["Position"] = UDim2.new(0, -5, 0, -5);
 
 
 -- StarterGui.Syntax.MainFrame.Shadows.Outlines
-G2L["5"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["5"]["ZIndex"] = -1;
-G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
-G2L["5"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["5"] = Instance.new("ImageLabel", CDWASHERE["3"]);
+CDWASHERE["5"]["ZIndex"] = -1;
+CDWASHERE["5"]["BorderSizePixel"] = 0;
+CDWASHERE["5"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
+CDWASHERE["5"]["ScaleType"] = Enum.ScaleType.Slice;
+CDWASHERE["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["5"]["Image"] = [[rbxassetid://117289445817087]];
-G2L["5"]["TileSize"] = UDim2.new(0, 20, 0, 20);
-G2L["5"]["Size"] = UDim2.new(1, 10, 1, 10);
-G2L["5"]["BackgroundTransparency"] = 1;
-G2L["5"]["Name"] = [[Outlines]];
-G2L["5"]["Position"] = UDim2.new(0, -5, 0, -5);
+CDWASHERE["5"]["Image"] = [[rbxassetid://117289445817087]];
+CDWASHERE["5"]["TileSize"] = UDim2.new(0, 20, 0, 20);
+CDWASHERE["5"]["Size"] = UDim2.new(1, 10, 1, 10);
+CDWASHERE["5"]["BackgroundTransparency"] = 1;
+CDWASHERE["5"]["Name"] = [[Outlines]];
+CDWASHERE["5"]["Position"] = UDim2.new(0, -5, 0, -5);
 
 
 -- StarterGui.Syntax.MainFrame.Shadows.Outlines
-G2L["6"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["6"]["ZIndex"] = -1;
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
-G2L["6"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["6"] = Instance.new("ImageLabel", CDWASHERE["3"]);
+CDWASHERE["6"]["ZIndex"] = -1;
+CDWASHERE["6"]["BorderSizePixel"] = 0;
+CDWASHERE["6"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
+CDWASHERE["6"]["ScaleType"] = Enum.ScaleType.Slice;
+CDWASHERE["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["6"]["Image"] = [[rbxassetid://117289445817087]];
-G2L["6"]["TileSize"] = UDim2.new(0, 20, 0, 20);
-G2L["6"]["Size"] = UDim2.new(1, 10, 1, 10);
-G2L["6"]["BackgroundTransparency"] = 1;
-G2L["6"]["Name"] = [[Outlines]];
-G2L["6"]["Position"] = UDim2.new(0, -5, 0, -5);
+CDWASHERE["6"]["Image"] = [[rbxassetid://117289445817087]];
+CDWASHERE["6"]["TileSize"] = UDim2.new(0, 20, 0, 20);
+CDWASHERE["6"]["Size"] = UDim2.new(1, 10, 1, 10);
+CDWASHERE["6"]["BackgroundTransparency"] = 1;
+CDWASHERE["6"]["Name"] = [[Outlines]];
+CDWASHERE["6"]["Position"] = UDim2.new(0, -5, 0, -5);
 
 
 -- StarterGui.Syntax.MainFrame.Shadows.Outlines
-G2L["7"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["7"]["ZIndex"] = -1;
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
-G2L["7"]["ScaleType"] = Enum.ScaleType.Slice;
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["7"] = Instance.new("ImageLabel", CDWASHERE["3"]);
+CDWASHERE["7"]["ZIndex"] = -1;
+CDWASHERE["7"]["BorderSizePixel"] = 0;
+CDWASHERE["7"]["SliceCenter"] = Rect.new(6, 6, 25, 25);
+CDWASHERE["7"]["ScaleType"] = Enum.ScaleType.Slice;
+CDWASHERE["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["7"]["Image"] = [[rbxassetid://117289445817087]];
-G2L["7"]["TileSize"] = UDim2.new(0, 20, 0, 20);
-G2L["7"]["Size"] = UDim2.new(1, 10, 1, 10);
-G2L["7"]["BackgroundTransparency"] = 1;
-G2L["7"]["Name"] = [[Outlines]];
-G2L["7"]["Position"] = UDim2.new(0, -5, 0, -5);
+CDWASHERE["7"]["Image"] = [[rbxassetid://117289445817087]];
+CDWASHERE["7"]["TileSize"] = UDim2.new(0, 20, 0, 20);
+CDWASHERE["7"]["Size"] = UDim2.new(1, 10, 1, 10);
+CDWASHERE["7"]["BackgroundTransparency"] = 1;
+CDWASHERE["7"]["Name"] = [[Outlines]];
+CDWASHERE["7"]["Position"] = UDim2.new(0, -5, 0, -5);
 
 
 -- StarterGui.Syntax.MainFrame.Scripts
-G2L["8"] = Instance.new("ScrollingFrame", G2L["2"]);
-G2L["8"]["Active"] = true;
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["TopImage"] = [[]];
-G2L["8"]["MidImage"] = [[]];
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
-G2L["8"]["Name"] = [[Scripts]];
-G2L["8"]["BottomImage"] = [[]];
-G2L["8"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["8"]["Size"] = UDim2.new(1, -50, 1, -100);
-G2L["8"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Position"] = UDim2.new(0.5, 0, 1, -215);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["ScrollBarThickness"] = 1;
+CDWASHERE["8"] = Instance.new("ScrollingFrame", CDWASHERE["2"]);
+CDWASHERE["8"]["Active"] = true;
+CDWASHERE["8"]["BorderSizePixel"] = 0;
+CDWASHERE["8"]["TopImage"] = [[]];
+CDWASHERE["8"]["MidImage"] = [[]];
+CDWASHERE["8"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+CDWASHERE["8"]["Name"] = [[Scripts]];
+CDWASHERE["8"]["BottomImage"] = [[]];
+CDWASHERE["8"]["AnchorPoint"] = Vector2.new(0.5, 0);
+CDWASHERE["8"]["Size"] = UDim2.new(1, -50, 1, -100);
+CDWASHERE["8"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["8"]["Position"] = UDim2.new(0.5, 0, 1, -215);
+CDWASHERE["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["8"]["ScrollBarThickness"] = 1;
 
 
 -- StarterGui.Syntax.MainFrame.Scripts.SmoothScroll
-G2L["9"] = Instance.new("LocalScript", G2L["8"]);
-G2L["9"]["Name"] = [[SmoothScroll]];
-
-
--- StarterGui.Syntax.MainFrame.Scripts.Script
-G2L["a"] = Instance.new("Script", G2L["8"]);
-
+CDWASHERE["9"] = Instance.new("LocalScript", CDWASHERE["8"]);
+CDWASHERE["9"]["Name"] = [[SmoothScroll]];
 
 
 -- StarterGui.Syntax.MainFrame.Scripts.Ex
-G2L["b"] = Instance.new("TextButton", G2L["8"]);
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["TextSize"] = 16;
-G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Name"] = [[Ex]];
-G2L["b"]["Visible"] = false;
-G2L["b"]["Position"] = UDim2.new(0.15278, 0, 0, 0);
+CDWASHERE["a"] = Instance.new("TextButton", CDWASHERE["8"]);
+CDWASHERE["a"]["BorderSizePixel"] = 0;
+CDWASHERE["a"]["TextSize"] = 16;
+CDWASHERE["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["a"]["BackgroundColor3"] = Color3.fromRGB(38, 38, 38);
+CDWASHERE["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+CDWASHERE["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["a"]["Name"] = [[Ex]];
+CDWASHERE["a"]["Visible"] = false;
+CDWASHERE["a"]["Position"] = UDim2.new(0.15278, 0, 0, 0);
 
 
 -- StarterGui.Syntax.MainFrame.Scripts.Ex.CanvasGroup
-G2L["c"] = Instance.new("CanvasGroup", G2L["b"]);
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["BackgroundTransparency"] = 1;
+CDWASHERE["b"] = Instance.new("CanvasGroup", CDWASHERE["a"]);
+CDWASHERE["b"]["BorderSizePixel"] = 0;
+CDWASHERE["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["b"]["Size"] = UDim2.new(1, 0, 1, 0);
+CDWASHERE["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["b"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.Syntax.MainFrame.Scripts.Ex.Circle
-G2L["d"] = Instance.new("LocalScript", G2L["b"]);
-G2L["d"]["Name"] = [[Circle]];
+CDWASHERE["c"] = Instance.new("LocalScript", CDWASHERE["a"]);
+CDWASHERE["c"]["Name"] = [[Circle]];
 
 
 -- StarterGui.Syntax.MainFrame.Scripts.UIListLayout
-G2L["e"] = Instance.new("UIListLayout", G2L["8"]);
-G2L["e"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["e"]["Padding"] = UDim.new(0, 3);
-G2L["e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+CDWASHERE["d"] = Instance.new("UIListLayout", CDWASHERE["8"]);
+CDWASHERE["d"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+CDWASHERE["d"]["Padding"] = UDim.new(0, 3);
+CDWASHERE["d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.Syntax.MainFrame.Scripts.LocalScript
+CDWASHERE["e"] = Instance.new("LocalScript", CDWASHERE["8"]);
+
 
 
 -- StarterGui.Syntax.MainFrame.Searchbox
-G2L["f"] = Instance.new("TextBox", G2L["2"]);
-G2L["f"]["CursorPosition"] = -1;
-G2L["f"]["Name"] = [[Searchbox]];
-G2L["f"]["PlaceholderColor3"] = Color3.fromRGB(68, 68, 68);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["TextSize"] = 16;
-G2L["f"]["TextColor3"] = Color3.fromRGB(169, 169, 169);
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
-G2L["f"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["f"]["PlaceholderText"] = [[Search for scripts]];
-G2L["f"]["Size"] = UDim2.new(1, -100, 0, 31);
-G2L["f"]["Position"] = UDim2.new(0.5, 0, 1, -255);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[]];
+CDWASHERE["f"] = Instance.new("TextBox", CDWASHERE["2"]);
+CDWASHERE["f"]["Name"] = [[Searchbox]];
+CDWASHERE["f"]["PlaceholderColor3"] = Color3.fromRGB(68, 68, 68);
+CDWASHERE["f"]["BorderSizePixel"] = 0;
+CDWASHERE["f"]["TextSize"] = 16;
+CDWASHERE["f"]["TextColor3"] = Color3.fromRGB(169, 169, 169);
+CDWASHERE["f"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+CDWASHERE["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Medium, Enum.FontStyle.Normal);
+CDWASHERE["f"]["AnchorPoint"] = Vector2.new(0.5, 0);
+CDWASHERE["f"]["PlaceholderText"] = [[Search for scripts]];
+CDWASHERE["f"]["Size"] = UDim2.new(1, -100, 0, 31);
+CDWASHERE["f"]["Position"] = UDim2.new(0.5, 0, 1, -255);
+CDWASHERE["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["f"]["Text"] = [[]];
 
 
 -- StarterGui.Syntax.MainFrame.Searchbox.Finder
-G2L["10"] = Instance.new("LocalScript", G2L["f"]);
-G2L["10"]["Name"] = [[Finder]];
+CDWASHERE["10"] = Instance.new("LocalScript", CDWASHERE["f"]);
+CDWASHERE["10"]["Name"] = [[Finder]];
 
 
 -- StarterGui.Syntax.MainFrame.Searchbox.Bar
-G2L["11"] = Instance.new("Frame", G2L["f"]);
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["11"]["Size"] = UDim2.new(0, 0, 0, 1);
-G2L["11"]["Position"] = UDim2.new(0.5, 0, 1, -1);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Name"] = [[Bar]];
+CDWASHERE["11"] = Instance.new("Frame", CDWASHERE["f"]);
+CDWASHERE["11"]["BorderSizePixel"] = 0;
+CDWASHERE["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["11"]["AnchorPoint"] = Vector2.new(0.5, 0);
+CDWASHERE["11"]["Size"] = UDim2.new(0, 0, 0, 1);
+CDWASHERE["11"]["Position"] = UDim2.new(0.5, 0, 1, -1);
+CDWASHERE["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["11"]["Name"] = [[Bar]];
 
 
 -- StarterGui.Syntax.MainFrame.Searchbox.Bar.Grad
-G2L["12"] = Instance.new("Frame", G2L["11"]);
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["12"]["Size"] = UDim2.new(1, 0, 0.5, -6);
-G2L["12"]["Position"] = UDim2.new(0.5, 0, 0, 1);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Name"] = [[Grad]];
-G2L["12"]["BackgroundTransparency"] = 0.65;
+CDWASHERE["12"] = Instance.new("Frame", CDWASHERE["11"]);
+CDWASHERE["12"]["BorderSizePixel"] = 0;
+CDWASHERE["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["12"]["AnchorPoint"] = Vector2.new(0.5, 0);
+CDWASHERE["12"]["Size"] = UDim2.new(1, 0, 0.5, -6);
+CDWASHERE["12"]["Position"] = UDim2.new(0.5, 0, 0, 1);
+CDWASHERE["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["12"]["Name"] = [[Grad]];
+CDWASHERE["12"]["BackgroundTransparency"] = 0.65;
 
 
 -- StarterGui.Syntax.MainFrame.Searchbox.Bar.Grad.UIGradient
-G2L["13"] = Instance.new("UIGradient", G2L["12"]);
-G2L["13"]["Rotation"] = -90;
-G2L["13"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 1),NumberSequenceKeypoint.new(1.000, 0)};
+CDWASHERE["13"] = Instance.new("UIGradient", CDWASHERE["12"]);
+CDWASHERE["13"]["Rotation"] = -90;
+CDWASHERE["13"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 1),NumberSequenceKeypoint.new(1.000, 0)};
 
 
 -- StarterGui.Syntax.MainFrame.Searchbox.Bar.LocalScript
-G2L["14"] = Instance.new("LocalScript", G2L["11"]);
+CDWASHERE["14"] = Instance.new("LocalScript", CDWASHERE["11"]);
 
 
 
 -- StarterGui.Syntax.MainFrame.Title
-G2L["15"] = Instance.new("TextLabel", G2L["2"]);
-G2L["15"]["TextWrapped"] = true;
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextSize"] = 24;
-G2L["15"]["TextScaled"] = true;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["BackgroundTransparency"] = 1;
-G2L["15"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["15"]["Size"] = UDim2.new(1, 0, 1, -275);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[Syntax (BETA)]];
-G2L["15"]["Name"] = [[Title]];
-G2L["15"]["Position"] = UDim2.new(0.5, 0, 0, 5);
+CDWASHERE["15"] = Instance.new("TextLabel", CDWASHERE["2"]);
+CDWASHERE["15"]["TextWrapped"] = true;
+CDWASHERE["15"]["BorderSizePixel"] = 0;
+CDWASHERE["15"]["TextSize"] = 24;
+CDWASHERE["15"]["TextScaled"] = true;
+CDWASHERE["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+CDWASHERE["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["15"]["BackgroundTransparency"] = 1;
+CDWASHERE["15"]["AnchorPoint"] = Vector2.new(0.5, 0);
+CDWASHERE["15"]["Size"] = UDim2.new(1, 0, 1, -275);
+CDWASHERE["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["15"]["Text"] = [[Syntax (BETA)]];
+CDWASHERE["15"]["Name"] = [[Title]];
+CDWASHERE["15"]["Position"] = UDim2.new(0.5, 0, 0, 5);
 
 
 -- StarterGui.Syntax.MainFrame.UIDrag
-G2L["16"] = Instance.new("LocalScript", G2L["2"]);
-G2L["16"]["Name"] = [[UIDrag]];
+CDWASHERE["16"] = Instance.new("LocalScript", CDWASHERE["2"]);
+CDWASHERE["16"]["Name"] = [[UIDrag]];
 
 
 -- StarterGui.Syntax.MainFrame.Warning
-G2L["17"] = Instance.new("Frame", G2L["2"]);
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(10, 15, 18);
-G2L["17"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["17"]["ClipsDescendants"] = true;
-G2L["17"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Name"] = [[Warning]];
-G2L["17"]["BackgroundTransparency"] = 0.4;
+CDWASHERE["17"] = Instance.new("Frame", CDWASHERE["2"]);
+CDWASHERE["17"]["BorderSizePixel"] = 0;
+CDWASHERE["17"]["BackgroundColor3"] = Color3.fromRGB(10, 15, 18);
+CDWASHERE["17"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+CDWASHERE["17"]["ClipsDescendants"] = true;
+CDWASHERE["17"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+CDWASHERE["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["17"]["Name"] = [[Warning]];
+CDWASHERE["17"]["BackgroundTransparency"] = 0.4;
 
 
 -- StarterGui.Syntax.MainFrame.Warning.Title
-G2L["18"] = Instance.new("TextLabel", G2L["17"]);
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["TextSize"] = 50;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["18"]["TextColor3"] = Color3.fromRGB(255, 61, 61);
-G2L["18"]["BackgroundTransparency"] = 1;
-G2L["18"]["Size"] = UDim2.new(0, 318, 0, 50);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18"]["Text"] = [[! WARNING !]];
-G2L["18"]["Name"] = [[Title]];
-G2L["18"]["Position"] = UDim2.new(0.182, 0, 0.16, 0);
+CDWASHERE["18"] = Instance.new("TextLabel", CDWASHERE["17"]);
+CDWASHERE["18"]["BorderSizePixel"] = 0;
+CDWASHERE["18"]["TextSize"] = 50;
+CDWASHERE["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+CDWASHERE["18"]["TextColor3"] = Color3.fromRGB(255, 61, 61);
+CDWASHERE["18"]["BackgroundTransparency"] = 1;
+CDWASHERE["18"]["Size"] = UDim2.new(0, 318, 0, 50);
+CDWASHERE["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["18"]["Text"] = [[! WARNING !]];
+CDWASHERE["18"]["Name"] = [[Title]];
+CDWASHERE["18"]["Position"] = UDim2.new(0.182, 0, 0.16, 0);
 
 
 -- StarterGui.Syntax.MainFrame.Warning.Desc
-G2L["19"] = Instance.new("TextLabel", G2L["17"]);
-G2L["19"]["TextWrapped"] = true;
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextSize"] = 24;
-G2L["19"]["TextScaled"] = true;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundTransparency"] = 1;
-G2L["19"]["Size"] = UDim2.new(0, 318, 0, 116);
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Text"] = [[Scripts are NOT verified, so use these at your own caution, and yes we do check  for malicous but some might slip through the cracks.]];
-G2L["19"]["Name"] = [[Desc]];
-G2L["19"]["Position"] = UDim2.new(0.182, 0, 0.32667, 0);
+CDWASHERE["19"] = Instance.new("TextLabel", CDWASHERE["17"]);
+CDWASHERE["19"]["TextWrapped"] = true;
+CDWASHERE["19"]["BorderSizePixel"] = 0;
+CDWASHERE["19"]["TextSize"] = 24;
+CDWASHERE["19"]["TextScaled"] = true;
+CDWASHERE["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+CDWASHERE["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["19"]["BackgroundTransparency"] = 1;
+CDWASHERE["19"]["Size"] = UDim2.new(0, 318, 0, 116);
+CDWASHERE["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["19"]["Text"] = [[Scripts are NOT verified, so use these at your own caution, and yes we do check  for malicous but some might slip through the cracks.]];
+CDWASHERE["19"]["Name"] = [[Desc]];
+CDWASHERE["19"]["Position"] = UDim2.new(0.182, 0, 0.32667, 0);
 
 
 -- StarterGui.Syntax.MainFrame.Warning.Button
-G2L["1a"] = Instance.new("TextButton", G2L["17"]);
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["TextSize"] = 18;
-G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 29);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Text"] = [[Ok, I understand.]];
-G2L["1a"]["Name"] = [[Button]];
-G2L["1a"]["Position"] = UDim2.new(0.3, 0, 0.81, 0);
+CDWASHERE["1a"] = Instance.new("TextButton", CDWASHERE["17"]);
+CDWASHERE["1a"]["BorderSizePixel"] = 0;
+CDWASHERE["1a"]["TextSize"] = 18;
+CDWASHERE["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["1a"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+CDWASHERE["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+CDWASHERE["1a"]["Size"] = UDim2.new(0, 200, 0, 29);
+CDWASHERE["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["1a"]["Text"] = [[Ok, I understand.]];
+CDWASHERE["1a"]["Name"] = [[Button]];
+CDWASHERE["1a"]["Position"] = UDim2.new(0.3, 0, 0.81, 0);
 
 
 -- StarterGui.Syntax.MainFrame.Warning.Button.LocalScript
-G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+CDWASHERE["1b"] = Instance.new("LocalScript", CDWASHERE["1a"]);
 
 
 
 -- StarterGui.Syntax.MainFrame.Warning.LocalScript
-G2L["1c"] = Instance.new("LocalScript", G2L["17"]);
+CDWASHERE["1c"] = Instance.new("LocalScript", CDWASHERE["17"]);
 
 
 
 -- StarterGui.Syntax.MainFrame.Title
-G2L["1d"] = Instance.new("TextLabel", G2L["2"]);
-G2L["1d"]["TextWrapped"] = true;
-G2L["1d"]["BorderSizePixel"] = 0;
-G2L["1d"]["TextSize"] = 24;
-G2L["1d"]["TextTransparency"] = 0.5;
-G2L["1d"]["TextScaled"] = true;
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
-G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["BackgroundTransparency"] = 1;
-G2L["1d"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["1d"]["Size"] = UDim2.new(1, 0, 1, -290);
-G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Text"] = [[Written by shr00mz and C:\Drive]];
-G2L["1d"]["Name"] = [[Title]];
-G2L["1d"]["Position"] = UDim2.new(0.5, 0, 0, 30);
+CDWASHERE["1d"] = Instance.new("TextLabel", CDWASHERE["2"]);
+CDWASHERE["1d"]["TextWrapped"] = true;
+CDWASHERE["1d"]["BorderSizePixel"] = 0;
+CDWASHERE["1d"]["TextSize"] = 24;
+CDWASHERE["1d"]["TextTransparency"] = 0.5;
+CDWASHERE["1d"]["TextScaled"] = true;
+CDWASHERE["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+CDWASHERE["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+CDWASHERE["1d"]["BackgroundTransparency"] = 1;
+CDWASHERE["1d"]["AnchorPoint"] = Vector2.new(0.5, 0);
+CDWASHERE["1d"]["Size"] = UDim2.new(1, 0, 1, -290);
+CDWASHERE["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+CDWASHERE["1d"]["Text"] = [[Written by shr00mz and C:\Drive]];
+CDWASHERE["1d"]["Name"] = [[Title]];
+CDWASHERE["1d"]["Position"] = UDim2.new(0.5, 0, 0, 30);
 
 
 -- StarterGui.Syntax.MainFrame.Scripts.SmoothScroll
 local function C_9()
-local script = G2L["9"];
+local script = CDWASHERE["9"];
 	local sf = script.Parent
 	local uis = game:GetService("UserInputService")
 	local rs = game:GetService("RunService")
@@ -365,8 +354,8 @@ local script = G2L["9"];
 end;
 task.spawn(C_9);
 -- StarterGui.Syntax.MainFrame.Scripts.Ex.Circle
-local function C_d()
-local script = G2L["d"];
+local function C_c()
+local script = CDWASHERE["c"];
 	local player = game.Players.LocalPlayer
 	local mouse = player:GetMouse()
 	
@@ -395,10 +384,48 @@ local script = G2L["d"];
 	end)
 	
 end;
-task.spawn(C_d);
+task.spawn(C_c);
+-- StarterGui.Syntax.MainFrame.Scripts.LocalScript
+local function C_e()
+local script = CDWASHERE["e"];
+	local list = script.Parent
+	
+	local function makebutton(name,script)
+		local clone = list.Ex:Clone()
+		clone.Parent = list
+		clone.Name = name
+		clone.Text = name
+		clone.Size = UDim2.new(0, 400,0, 31)
+		clone.Visible = true
+		clone.MouseButton1Click:Connect(function()
+			loadstring(script)()
+		end)
+	end
+	
+	local grabbed, response = pcall(function()
+		return game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/C-Dr1ve/CommunityScriptHub/refs/heads/main/AllScripts.txt")
+	end)
+	
+	if grabbed then
+		for line in string.gmatch(response, "[^\r\n]+") do
+			local parts = string.split(line, ":::")
+			if #parts == 2 then
+				makebutton(parts[1],parts[2])
+			else
+				print("[⚠] INVALID FORMAT: "..line)
+			end
+		end
+		print("[✅] Succesfully loaded scripts library!")
+	else
+		warn("[⚠] Failed to fetch file, exiting the script...")
+		wait(1)
+		list.Parent.Parent:Destroy()
+	end
+end;
+task.spawn(C_e);
 -- StarterGui.Syntax.MainFrame.Searchbox.Finder
 local function C_10()
-local script = G2L["10"];
+local script = CDWASHERE["10"];
 	local list = script.Parent.Parent.Scripts
 	local box = script.Parent
 	
@@ -416,7 +443,7 @@ end;
 task.spawn(C_10);
 -- StarterGui.Syntax.MainFrame.Searchbox.Bar.LocalScript
 local function C_14()
-local script = G2L["14"];
+local script = CDWASHERE["14"];
 	local box = script.Parent.Parent
 	local bar = script.Parent
 	local tweendelay = 0.3
@@ -431,7 +458,7 @@ end;
 task.spawn(C_14);
 -- StarterGui.Syntax.MainFrame.UIDrag
 local function C_16()
-local script = G2L["16"];
+local script = CDWASHERE["16"];
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
@@ -471,7 +498,7 @@ end;
 task.spawn(C_16);
 -- StarterGui.Syntax.MainFrame.Warning.Button.LocalScript
 local function C_1b()
-local script = G2L["1b"];
+local script = CDWASHERE["1b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent:TweenSize(UDim2.new(0,0,0,0),"Out","Sine",1,true)
 		wait(1.1)
@@ -481,9 +508,9 @@ end;
 task.spawn(C_1b);
 -- StarterGui.Syntax.MainFrame.Warning.LocalScript
 local function C_1c()
-local script = G2L["1c"];
+local script = CDWASHERE["1c"];
 	script.Parent:TweenSize(UDim2.new(1,0,1,0),"Out","Sine",1,true)
 end;
 task.spawn(C_1c);
 
-return G2L["1"], require;
+return CDWASHERE["1"], require;
