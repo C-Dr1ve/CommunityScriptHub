@@ -10,3 +10,4 @@ MM2 Gui:::loadstring(game:HttpGet("https://raw.githubusercontent.com/Kokotzkanal
 FE Dog Script:::loadstring(game:HttpGet("https://pastebin.com/raw/WyqDmp0t"))()
 hello world!:::print("Hello world!")
 MM2 Script by GhostMM2:::loadstring(game:HttpGet("https://gist.githubusercontent.com/SolentraXminishakk/04fb4af29a6e01b2d7109558c6789020/raw/396de0827fabe04f069ade22fb3a8796d136f684/GhostMm2"))()
+Player Fling (Can sometimes crash Players):::loadstring(game:HttpGet("https://raw.githubusercontent.com/hnrie/script/refs/heads/main/message%20(6).txt"))()
